@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Калькулятор JS - Интенсив</h1>
+	<div class="calc">
+		<div class="tabs">
+			<div class="tab-left active">Лэндинг</div>
+			<div class="tab-right">Многостраничник</div>
+		</div>
+		<div class="blocks" id="blocks-block">
+			<div class="blocks-title">Количество блоков</div>
+			<input type="number" class="counter" id="counter-block">
+		</div>
+		<div class="blocks" id="pages-block">
+			<div class="blocks-title">Количество страниц</div>
+			<input type="number" class="counter" id="counter-pages">
+		</div>
+		<div class="blocks" id="hours-block">
+			<div class="blocks-title">Сколько часов на проект</div>
+			<input type="number" class="counter" id="counter-hours">
+		</div>
+		<div class="blocks" id="price-block">
+			<div class="blocks-title">Стоимость вашего часа</div>
+			<input type="number" class="counter" id="price-hours">
+		</div>
+		<div class="addition">
+			<div class="addition-title">Дополнительно</div>
+			<div class="addition-block">
+				<label>
+					<input type="checkbox" class="checkbox" id="edit-text">
+					<span class="checkbox-custom"></span>
+					<span class="label">Возможность редактировать текст на сайте</span>
+				</label>				
+			</div>
+			<div class="addition-block">
+				<label>
+					<input type="checkbox" class="checkbox" id="edit-cms">
+					<span class="checkbox-custom"></span>
+					<span class="label">Установка на CMS</span>
+				</label>				
+			</div>
+		</div>
+
+		<div class="total">
+			Общая стоимость
+			<input value="5000" type="text" class="total-sum" id="total-value">
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
